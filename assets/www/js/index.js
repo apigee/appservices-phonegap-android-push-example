@@ -40,13 +40,13 @@ var app = {
         var pushNotification = window.pushNotification;
         console.log("got here outside");
         var gcmOptions = {
-            gcmSenderId:"650515065956"
+            gcmSenderId:"YOUR GCM SENDER ID"
         };
         pushNotification.registerDevice(gcmOptions, function(device){
             var options = {
-                orgName:"mdobson",
-                appName:"andypush",
-                apiUrl:"http://ug-stress.elasticbeanstalk.com/",
+                provider:"apigee",
+                orgName:"YOUR APIGEE.COM USERNAME",
+                appName:"sandbox",
                 notifier:"android_push",
                 deviceId:device.deviceId
             };
@@ -62,9 +62,8 @@ var app = {
             //push here
             var options = {
              provider:"apigee",
-             orgName:"mdobson",
-             appName:"andypush",
-             apiUrl:"http://ug-stress.elasticbeanstalk.com/",
+             orgName:"YOUR APIGEE.COM USERNAME",
+             appName:"sandbox",
              message:"Hello!"
             };
             
