@@ -38,9 +38,8 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         var pushNotification = window.pushNotification;
-        console.log("got here outside");
         var gcmOptions = {
-            gcmSenderId:"YOUR GCM SENDER ID"
+            gcmSenderId:"GCM SENDER ID"
         };
         pushNotification.registerDevice(gcmOptions, function(device){
             var options = {
