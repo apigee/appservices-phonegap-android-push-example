@@ -39,7 +39,7 @@ var app = {
     onDeviceReady: function() {
         var pushNotification = window.pushNotification;
         var gcmOptions = {
-            gcmSenderId:"GCM SENDER ID"
+            gcmSenderId:"YOUR GCM SENDER ID"
         };
         pushNotification.registerDevice(gcmOptions, function(device){
             var options = {
@@ -63,6 +63,7 @@ var app = {
              provider:"apigee",
              orgName:"YOUR APIGEE.COM USERNAME",
              appName:"sandbox",
+             notifier:"android_push",
              message:"Hello!"
             };
             
