@@ -106,7 +106,7 @@ public class PushNotification extends Plugin {
 			    Entity notification = new Entity(entityPath);
 	
 			    HashMap<String,String> payloads = new HashMap<String, String>();
-			    payloads.put("android_push", options.getString("message"));
+			    payloads.put(options.getString("notifier"), options.getString("message"));
 			    notification.setProperty("payloads", JsonUtils.toJsonNode(payloads));
 			    client.createEntityAsync(notification, new ApiResponseCallback() {
 			
