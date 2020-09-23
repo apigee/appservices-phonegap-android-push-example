@@ -19,7 +19,7 @@
 -->
 <cordova>
     <!--
-    access elements control the Android whitelist.
+    access elements control the Android allowed list.
     Domains are assumed blocked unless set otherwise
      -->
 
